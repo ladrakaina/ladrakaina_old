@@ -33,7 +33,23 @@ a{
   color: #E4E6EB;
   text-decoration: none;
 }
-
+a:hover {
+    text-decoration: underline;
+    color: #FF1493;
+}
+a.colorlink {
+    text-decoration: none;
+    color: #FF1493;
+}
+a.button {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
 p{
   font-size: 18px;
   line-height: 1.3em;
@@ -81,6 +97,10 @@ body{
   padding: 0;
   scroll-behavior: smooth;
   background: #181818;
+}
+
+div.button {
+    text-align: center;
 }
 
 /*-----------------------FOOTER-----------------------*/
