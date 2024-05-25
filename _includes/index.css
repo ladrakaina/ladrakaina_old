@@ -1,70 +1,96 @@
-body{
-  grid-template-rows: repeat(6, 6fr var(--margin-grid)) var(--margin-border);
-}
 
-.intro{
-  grid-column: 6/span 5;
-  grid-row: 6;
-}
+      body{
+        background-image: url('/assets/images/f3mm3ph1l3_90s_anime_ferocious_dragon_stomping_and_burning_a__1f5c0e29-22dd-4c22-83eb-2901a3b4609e_2.png');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; /* Center the background image */
+      }
 
-.quote{
-  font-size: 22px;
-  text-align: center;
-  line-height: 2em;
-}
+      .header a {
+        text-shadow: 2px 2px 1px black;
+      }
 
-.reference{
-  font-size: 14px;
-  text-align: center;
-  line-height: 2em;
-}
+      .intro {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center; /* Center text horizontally */
+      }
 
-@media screen and (max-width: 900px) {
-  .intro{
-    grid-column: 3 /span 11;
-    grid-row: 5;
-  }
+      .quote {
+        font-size: 44px;
+        text-align: center;
+        line-height: 2em;
+        font-weight: bold;
+        text-shadow:
+           2px 2px 0px black,
+           3px 3px 0px black;
+      }
 
-  .quote{
-    font-size: 14px;
-    text-align: center;
-    line-height: 2em;
-  }
+      .reference{
+        font-size: 14px;
+        text-align: center;
+        line-height: 2em;
+        text-shadow:
+           1px 1px 1px black;
+      }
 
-  .reference{
-    font-size: 10px;
-    text-align: center;
-    line-height: 2em;
-  }
+      @media screen and (max-width: 900px) {
+        .intro{
+          grid-column: 3 /span 11;
+          grid-row: 5;
+        }
 
-  .footer-left{
-    width: 100%;
-  }
-}
+        .quote{
+          font-size: 33px;
+          text-align: center;
+          line-height: 2em;
+          font-weight: bold;
+          text-shadow:
+             2px 2px 0px black,
+             3px 3px 0px black;
+        }
 
-@media screen and (max-height: 450px) {
-  body {
-    grid-template-rows: auto;
-  }
+        .reference{
+          font-size: 10px;
+          text-align: center;
+          line-height: 2em;
+        }
 
-  .intro{
-    grid-column: 3 /span 11;
-    grid-row: 5;
-  }
+        .footer-left{
+          width: 100%;
+        }
+      }
 
-  .quote{
-    font-size: 14px;
-    text-align: center;
-    line-height: 2em;
-  }
+      @media screen and (max-height: 450px) {
+        body {
+          grid-template-rows: auto;
+        }
 
-  .reference{
-    font-size: 10px;
-    text-align: center;
-    line-height: 2em;
-  }
+        .intro{
+          grid-column: 3 /span 11;
+          grid-row: 5;
+        }
 
-  .footer-left{
-    width: 100%;
-  }
-}
+        .quote{
+          font-size: 33px;
+          text-align: center;
+          line-height: 2em;
+          font-weight: bold;
+          text-shadow:
+             2px 2px 0px black,
+             3px 3px 0px black;
+        }
+
+        .reference{
+          font-size: 10px;
+          text-align: center;
+          line-height: 2em;
+        }
+
+        .footer-left{
+          width: 100%;
+        }
+      }

@@ -33,6 +33,7 @@ a{
   color: #E4E6EB;
   text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
     color: #FF1493;
@@ -50,6 +51,7 @@ a.button {
     text-decoration: none;
     display: inline-block;
 }
+
 p{
   font-size: 18px;
   line-height: 1.3em;
